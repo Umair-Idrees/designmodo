@@ -1,0 +1,114 @@
+
+.forbgcolor{
+    background-color: #fafafb;
+}
+.section1 {
+  display: flex;
+
+  padding: 10px;
+}
+.cloudImg{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 3;
+    animation: clouds1 10s infinite;
+}
+.decorSpan{
+    text-decoration: underline;
+    text-decoration-color: #ffc62d;
+    margin-bottom: 3px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  font-size: 18px;
+  color: #252525;
+  font-family: "IBMPlexSans", sans-serif;
+  line-height: 30px;
+}
+ul,
+li,
+a {
+  font-size: 20px;
+  list-style: none;
+  font-weight: 500px;
+
+  text-decoration: none;
+  gap: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+   color: #6f6cfd;
+    font-size: 18px;
+   
+    
+  }
+
+.linksTag {
+  margin-right: 20px;
+}
+.textDiv {
+  
+  margin-left: 100px;
+}
+
+.mainButton {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500px;
+  padding: 15px;
+  background-image: url(images/button-green.png);
+  border: none;
+}
+
+
+.section2{
+    display: flex;
+    margin-top: 80px;
+    padding:150px;
+}
+.textDivHead{
+   
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+
+.explainer{
+font-size: 17px;
+color: #333;
+}
+.explainer1{
+    color: rgba(37,37,37,0.51);
+    font-size: 13px;
+    margin-top: 15px;
+    line-height: 1.6em;
+}
+
+.section3{
+    display: flex;
+    margin-top: 10px;
+    padding: 110px;
+}
+
+.sec3explainer{
+    font-size: 17px;
+color: #333;
+
+}
+
+.section4{
+    display: flex;
+    margin-top: 10px;
+    padding: 150px;
+}
+.decorSpan1{
+    color: #4eb17a;
+    text-decoration: underline;
+    cursor: pointer;
+}
