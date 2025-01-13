@@ -1,4 +1,4 @@
-/* SECTION 1 -HERO SECTION */
+/* Logo Section */
 .logoDiv {
   margin-left: 80px;
   margin-top: 70px;
@@ -9,7 +9,7 @@
     margin: 0;
   }
 }
-
+/* SECTION 1 -HERO SECTION */
 .container1 {
   display: flex;
   padding-top: 20px;
@@ -128,32 +128,27 @@ a:hover {
     font-size: 16px;
     line-height: 1.6em;
   }
-
   ul,
   li,
   a {
     font-size: 18px;
     text-align: center;
   }
-
   .mainButton {
     font-size: 16px;
     padding: 12px 20px;
     background-image: url(images/button-green.png);
     margin-top: 15px;
   }
-
   .imageDiv {
     text-align: center;
     margin-top: 20px;
   }
-
   .ballonImg {
     margin-top: 100px;
     width: 100%;
     max-width: 600px;
   }
-
   .cloudImg {
     left: 50%;
     transform: translateX(-50%);
@@ -166,19 +161,15 @@ a:hover {
 @media (max-width: 480px) {
   .container1 {
     flex-direction: column-reverse;
-
     padding: 10px;
     gap: 15px;
   }
-
   .main-text-div {
     width: 100%;
   }
-
   .textDiv {
     margin: 0;
   }
-
   .list {
     flex-direction: column;
     gap: 10px;
@@ -286,6 +277,10 @@ a:hover {
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
+    text-align: center;
+  }
+  .main-section2-img {
+    text-align: center;
   }
 }
 
@@ -329,9 +324,10 @@ a:hover {
 /* SECTION-3 */
 .container3 {
   display: flex;
-  margin-left: 15px;
-  margin-right: 30px;
-  margin-top: 200px;
+
+  margin-top: 300px;
+  padding-left: 120px;
+  padding-right: 250px;
 }
 
 .container3-explainer {
@@ -347,12 +343,16 @@ a:hover {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
-
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 100px;
   }
   .container3Img {
     width: 70%;
     margin-left: 20px;
+  }
+  .main-container3Img {
+    text-align: center;
   }
   .textDivHead {
     font-size: 30px;
@@ -397,7 +397,7 @@ a:hover {
 /* SECTION-4 */
 .section4 {
   display: flex;
-  margin-top: 10px;
+  margin-top: 200px;
   padding: 150px;
   font-family: "IBMPlexSans", sans-serif;
 }
@@ -424,6 +424,8 @@ a:hover {
   .section4 {
     flex-direction: column;
     padding: 50px;
+    margin-top: 100px;
+    align-items: center;
   }
 
   .textDiv4 {
@@ -450,12 +452,14 @@ a:hover {
     width: 100%;
     max-width: 250px;
     margin-bottom: 20px;
+    justify-items: center;
   }
 }
 
 @media (max-width: 480px) {
   .section4 {
     padding: 30px;
+    margin-top: 40px !important;
   }
 
   .textDiv4 {
@@ -609,8 +613,8 @@ a:hover {
   }
 }
 
-/* SECTO6- FEATURE SECTION */
-/* .features-section {
+/* section6 */
+.feature-container {
   display: flex;
   gap: 150px;
   align-items: center;
@@ -668,128 +672,110 @@ a:hover {
 }
 .feature-rigt-div {
   display: flex;
-} */
-
-/* For default styling */
-.features-section {
-  display: flex;
-  gap: 150px;
-  align-items: center;
-  padding-right: 2%;
-  padding: 120px;
-  height: 600px;
 }
 
-.features-left .tagline {
-  top: -120px;
-  left: 35px;
-  font-size: 24px;
-  font-family: "IBMPlexSerif", serif;
-  font-weight: 600;
-  font-style: italic;
-  color: #16a053;
-  -webkit-transform: rotate(-4.71deg);
-  transform: rotate(-4.71deg);
-}
-
-.features-right {
-  flex: 2;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -100px;
-  padding: 70px;
-  margin-left: -40px;
-  margin-right: -30px;
-}
-
-.feature-item {
-  flex-direction: row;
-  display: flex;
-  width: 100%;
-}
-
-.feature-item h4 {
-  font-size: 17px;
-  line-height: 1.3em;
-  font-weight: 600;
-  color: #333;
-  font-family: "IBMPlexSans", sans-serif;
-}
-
-.feature-item p {
-  font-family: "IBMPlexSans", sans-serif;
-}
-
-.icon-img {
-  width: 12%;
-  margin-top: 20px;
-}
-
-.content-div {
-  flex-direction: column;
-  width: 70%;
-  justify-content: flex-start;
-}
-
-.feature-rigt-div {
-  display: flex;
-}
-
-/* Media Query for max-width: 768px (Two items per row) */
-@media (max-width: 768px) {
-  .features-section {
+@media screen and (max-width: 768px) {
+  .feature-container {
     flex-direction: column;
-    padding: 80px 20px;
+    padding: 30px 54px;
     height: auto;
+    gap: 60px;
   }
 
-  .features-left {
-    text-align: center;
-    margin-bottom: 30px;
-    order: 1;
+  .features-left .tagline {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .features-left .feature-image {
+    width: 200px;
   }
 
   .features-right {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
+    flex: none;
     margin-right: 0;
+    padding: 0;
     margin-left: 0;
-    order: 2;
+  }
+
+  .feature-rigt-div {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .feature-item {
-    width: 48%; /* Ensure 2 items per row */
-    margin-bottom: 30px;
-    margin-right: 4%; /* Spacing between items */
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .icon-img {
     width: 20%;
-    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .content-div {
-    width: 80%;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .feature-item h4 {
     font-size: 16px;
-    margin-bottom: 10px;
   }
 
   .feature-item p {
     font-size: 14px;
-    line-height: 1.6em;
   }
 
-  /* Remove margin from last item in each row */
-  .feature-item:nth-child(2n) {
-    margin-right: 0;
+  .feature-item {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 75%;
+    justify-content: flex-start;
+  }
+  .icon-img {
+    width: 12%;
+    margin-top: 30px;
   }
 }
 
-/*SECTION7- Pricing Section */
+@media screen and (max-width: 480px) {
+  .feature-container {
+    padding: 60px 20px;
+    gap: 50px;
+  }
+  .feature-rigt-div {
+    display: block;
+  }
+  .features-left p {
+    font-size: 20px !important;
+  }
+
+  .feature-item {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .content-div {
+    flex-direction: column;
+    width: 75%;
+    justify-content: flex-start;
+  }
+  .icon-img {
+    width: 12%;
+    margin-top: 30px;
+  }
+}
+
+/*SECTION7-*/
 .pricing-section {
   display: flex;
   gap: 20px;
@@ -807,7 +793,6 @@ a:hover {
   height: 350px;
   padding: 10px;
   gap: 5;
-  /* transition: transform 0.3s, box-shadow 0.3s; */
 }
 
 .pricing-card h3 {
@@ -836,14 +821,6 @@ a:hover {
 }
 
 .pricing-card .btn {
-  /* background-color: #e6ffe6;
-  color: #ffffff;
-
-
-  padding: 15px 50px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s; */
   padding: 16px 44px 16px;
   font-size: 18px;
   font-weight: 500;
@@ -854,7 +831,6 @@ a:hover {
   margin-top: 40px;
 }
 
-/* Specific Card Colors */
 .monthly {
   background-color: rgb(1, 94, 204);
   color: white;
@@ -880,7 +856,6 @@ a:hover {
 .monthly .btn {
   color: #0160d0;
   background: #fff;
-
   padding: 16px 44px 16px;
   font-size: 18px;
   font-weight: 500;
@@ -929,22 +904,21 @@ a:hover {
   }
 }
 
-/* For screens smaller than or equal to 480px */
 @media (max-width: 480px) {
   .pricing-section {
     flex-direction: column;
-    padding: 5%; /* Ensure there's padding around the cards */
+    padding: 5%;
   }
 
   .pricing-card {
-    width: 100%; /* Set card width to 100% */
-    box-sizing: border-box; /* Ensure padding doesn't overflow */
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 15px;
-    padding: 15px; /* Reduced padding for better fit */
+    padding: 15px;
   }
 
   .pricing-card h1 {
-    font-size: 40px;
+    font-size: 64px !important;
     margin-top: 10%;
   }
 
@@ -992,60 +966,58 @@ a:hover {
   font-family: "IBMPlexSans", sans-serif;
 }
 
-/* For screens smaller than or equal to 768px */
 @media (max-width: 768px) {
   .main-footer {
-    display: flex; /* Stack items vertically */
-    align-items: center; /* Center-align items */
-    padding-left: 20px; /* Reduce padding */
-    padding-right: 20px; /* Reduce padding */
-    padding-bottom: 30px; /* Adjust bottom padding */
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
   }
 
   .footerSpan {
-    text-align: center; /* Center-align text */
-    margin-bottom: 20px; /* Add some space below */
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .chat {
-    margin-top: 15px; /* Add space between chat and the rest */
-    text-align: center; /* Center-align "Talk with Us!" */
+    margin-top: 15px;
+    text-align: center;
   }
 
   .themeName {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px;
   }
 
   .chat {
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px;
   }
 }
 
-/* For screens smaller than or equal to 480px */
 @media (max-width: 480px) {
   .main-footer {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items */
-    padding-left: 15px; /* Reduce padding further */
-    padding-right: 15px; /* Reduce padding further */
-    padding-bottom: 25px; /* Adjust bottom padding */
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
   }
 
   .footerSpan {
-    text-align: center; /* Center-align text */
-    margin-bottom: 15px; /* Add some space below */
+    text-align: center;
+    margin-bottom: 15px;
   }
 
   .chat {
-    margin-top: 10px; /* Add space between chat and the rest */
-    text-align: center; /* Center-align "Talk with Us!" */
+    margin-top: 10px;
+    text-align: center;
   }
 
   .themeName {
-    font-size: 12px; /* Further reduce font size */
+    font-size: 12px;
   }
 
   .chat {
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px;
   }
 }
